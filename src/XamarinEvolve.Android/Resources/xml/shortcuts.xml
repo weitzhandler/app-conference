@@ -1,5 +1,5 @@
 ﻿<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
-  <!--<shortcut
+  <shortcut
     android:shortcutId="sessions"
     android:enabled="true"
     android:icon="@drawable/menu_sessions"
@@ -38,5 +38,5 @@
       android:targetPackage="com.xamarin.xamarinevolve"
       android:targetClass="com.xamarin.xamarinevolve.MainActivity" 
       android:data="http://evolve.xamarin.com/minihacks"/>
-  </shortcut>-->
+  </shortcut>
 </shortcuts>

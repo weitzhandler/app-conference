@@ -149,6 +149,11 @@ namespace XamarinEvolve.Droid
             DataRefreshService.ScheduleRefresh (this);
         }
 
+        protected override void OnNewIntent(Intent intent)
+        {
+            base.OnNewIntent(intent);
+        }
+
 
 
         void InitializeHockeyApp()

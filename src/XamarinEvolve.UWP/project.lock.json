@@ -583,7 +583,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -603,7 +603,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -611,15 +611,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.native.System.IO.Compression/4.1.0": {
@@ -646,20 +646,22 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -670,11 +672,26 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -3125,7 +3142,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -3145,7 +3162,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -3153,15 +3170,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -3486,20 +3503,22 @@
           "runtimes/win8-arm/native/clrcompression.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -3510,11 +3529,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -5805,7 +5828,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -5825,7 +5848,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -5833,15 +5856,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -6204,20 +6227,22 @@
           "runtimes/win8-arm-aot/native/_._": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -6228,11 +6253,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -8526,7 +8555,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -8546,7 +8575,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -8554,15 +8583,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -8892,20 +8921,22 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -8916,11 +8947,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -11215,7 +11250,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -11235,7 +11270,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -11243,15 +11278,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -11619,20 +11654,22 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -11643,11 +11680,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -13941,7 +13982,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -13961,7 +14002,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -13969,15 +14010,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.any.System.Collections/4.0.11": {
@@ -14307,20 +14348,22 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -14331,11 +14374,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -16630,7 +16677,7 @@
           "lib/portable-win8+wpa81/PCLStorage.dll": {}
         }
       },
-      "Plugin.Permissions/1.1.7": {
+      "Plugin.Permissions/1.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
           "lib/UAP10/Plugin.Permissions.dll": {}
@@ -16650,7 +16697,7 @@
           "lib/UAP10/Plugin.Share.dll": {}
         }
       },
-      "Refractored.MvvmHelpers/1.0.1": {
+      "Refractored.MvvmHelpers/1.1.0": {
         "compile": {
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         },
@@ -16658,15 +16705,15 @@
           "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll": {}
         }
       },
-      "Refractored.XamForms.PullToRefresh/1.0.10": {
+      "Refractored.XamForms.PullToRefresh/1.1.0": {
         "dependencies": {
-          "Xamarin.Forms": "2.0.1.6505"
+          "Xamarin.Forms": "2.3.2.127"
         },
         "compile": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.0.10": {
@@ -17034,20 +17081,22 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
-      "SQLitePCLRaw.bundle_green/1.0.0": {
+      "SQLitePCLRaw.bundle_green/1.1.1": {
         "dependencies": {
-          "SQLitePCLRaw.core": "1.0.0",
-          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.0.0",
-          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.1",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.1"
         },
         "compile": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {}
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
         }
       },
-      "SQLitePCLRaw.core/1.0.0": {
+      "SQLitePCLRaw.core/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
@@ -17058,11 +17107,15 @@
           "lib/uap10.0/SQLitePCLRaw.core.dll": {}
         }
       },
-      "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {},
-      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "SQLitePCLRaw.core": "1.0.0"
+          "SQLitePCLRaw.core": "1.1.1"
         },
         "compile": {
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
@@ -19589,13 +19642,12 @@
         "package/services/metadata/core-properties/dba2944eebe04ff298a58a04f2282910.psmdcp"
       ]
     },
-    "Plugin.Permissions/1.1.7": {
-      "sha512": "RlZM/5XJDALJhaIGYqDNaKnJk/n7bLsmX279Ir7QRi7OyzAj22+8nEnlg1BIjn+apMDHbhYfKgT3TlinCXv9Qw==",
-      "type": "Package",
+    "Plugin.Permissions/1.2.1": {
+      "sha512": "r+4wE4ef530pqUgm6SXji/SV/XktT/xN7TYv4k5NoBQe+eR1TzV+bPn4WRnYaXMgS4u3BlZN62h2CMCZGPzvQw==",
+      "type": "package",
       "files": [
+        "Plugin.Permissions.1.2.1.nupkg.sha512",
         "Plugin.Permissions.nuspec",
-        "[Content_Types].xml",
-        "_rels/.rels",
         "lib/MonoAndroid10/Plugin.Permissions.Abstractions.dll",
         "lib/MonoAndroid10/Plugin.Permissions.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Permissions.Abstractions.xml",
@@ -19618,12 +19670,12 @@
         "lib/net45/Plugin.Permissions.dll",
         "lib/net45/Plugin.Permissions.pdb",
         "lib/net45/Plugin.Permissions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Permissions.xml",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.Abstractions.dll",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.Abstractions.pdb",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.Abstractions.xml",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.dll",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.pdb",
+        "lib/portable-net45+wp80+win+wpa81/Plugin.Permissions.xml",
         "lib/win8/Plugin.Permissions.Abstractions.dll",
         "lib/win8/Plugin.Permissions.Abstractions.pdb",
         "lib/win8/Plugin.Permissions.Abstractions.xml",
@@ -19642,7 +19694,6 @@
         "lib/wpa81/Plugin.Permissions.dll",
         "lib/wpa81/Plugin.Permissions.pdb",
         "lib/wpa81/Plugin.Permissions.xml",
-        "package/services/metadata/core-properties/b1c13257b85848b0a873664f6009afbd.psmdcp",
         "readme.txt"
       ]
     },
@@ -19694,25 +19745,22 @@
         "lib/wpa81/Plugin.Share.xml"
       ]
     },
-    "Refractored.MvvmHelpers/1.0.1": {
-      "sha512": "ZaQAQF+NqmOQC9jetZfKaafDgdu2pB+7E+hoaUjGDN5ydw+h0haxo5NPINr/zQ9+LOPiyIBZA0tcikiFp5kz0w==",
-      "type": "Package",
+    "Refractored.MvvmHelpers/1.1.0": {
+      "sha512": "yZaL+EG0EqQJ730+qLH3YbbifJ3WqKwzMqUtWN3LaxbcHH9c1LHD63vLj18lESriw1S/cbcTd4XWPP0n7jVIFw==",
+      "type": "package",
       "files": [
+        "Refractored.MvvmHelpers.1.1.0.nupkg.sha512",
         "Refractored.MvvmHelpers.nuspec",
-        "[Content_Types].xml",
-        "_rels/.rels",
         "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.xml",
-        "package/services/metadata/core-properties/1.psmdcp"
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/MvvmHelpers.xml"
       ]
     },
-    "Refractored.XamForms.PullToRefresh/1.0.10": {
-      "sha512": "deVZ7kSgJEFoG7EE5XcxuuWZe9NzQlcoOnuy8WTzZp+zpOd3nrDon7aQks+cRm+9u3ELVskvN7Zag79381Gc/w==",
-      "type": "Package",
+    "Refractored.XamForms.PullToRefresh/1.1.0": {
+      "sha512": "beIDzF70hSb5b/+vP5GPUGX3zjsY3kNhH9o0GL7uA+3hBw5Ds7MSaUSwsZmzsRQFxAtyL4/b6B80YOV76ullcw==",
+      "type": "package",
       "files": [
+        "Refractored.XamForms.PullToRefresh.1.1.0.nupkg.sha512",
         "Refractored.XamForms.PullToRefresh.nuspec",
-        "[Content_Types].xml",
-        "_rels/.rels",
         "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.Droid.dll",
         "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.Droid.xml",
         "lib/MonoAndroid10/Refractored.XamForms.PullToRefresh.dll",
@@ -19721,9 +19769,8 @@
         "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.iOS.dll",
         "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.iOS.xml",
         "lib/Xamarin.iOS10/Refractored.XamForms.PullToRefresh.xml",
-        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.dll",
-        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Refractored.XamForms.PullToRefresh.xml",
-        "package/services/metadata/core-properties/36843d293d694dafa624dd48e6a8d44d.psmdcp"
+        "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Refractored.XamForms.PullToRefresh.xml"
       ]
     },
     "runtime.any.System.Collections/4.0.11": {
@@ -20648,40 +20695,58 @@
         "runtimes/win8-arm/native/clrcompression.dll"
       ]
     },
-    "SQLitePCLRaw.bundle_green/1.0.0": {
-      "sha512": "MS0nWvHYuSZvENiMXMfj/jr7dACqOFSBXE1fuUEwMsf/IDXPx/4a1IaZqb+A2IcouzLrA8JI1D4yGjxvV3QWDA==",
+    "SQLitePCLRaw.bundle_green/1.1.1": {
+      "sha512": "faK1R17gvRcKzCUUshwijR/JNY9x/gAnMR5U+izqpZhf2M5/yxxoz+cmSG0oLKaKQJed1QxJc2G/S5b5YwIXbw==",
       "type": "package",
       "files": [
-        "SQLitePCLRaw.bundle_green.1.0.0.nupkg.sha512",
+        "SQLitePCLRaw.bundle_green.1.1.1.nupkg.sha512",
         "SQLitePCLRaw.bundle_green.nuspec",
         "build/wp8/SQLitePCLRaw.bundle_green.targets",
         "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
         "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
         "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
-        "lib/MonoTouch/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
         "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
         "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
         "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
         "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
         "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
         "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
         "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
         "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
         "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
         "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
         "lib/wp8/_._",
-        "lib/wpa81/SQLitePCLRaw.batteries_green.dll"
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll"
       ]
     },
-    "SQLitePCLRaw.core/1.0.0": {
-      "sha512": "8tY6LQKKX6aEC/hbyNP4PkAnNrVygrzVr2W94mg8zQOwN0M51nDaFEGLYAp8kgEdreUmwCu+79vliq/WcefGZQ==",
+    "SQLitePCLRaw.core/1.1.1": {
+      "sha512": "ryo2cTg24aEdtR9J3s56nfmsl8dxAjproA1vLqtrLKqkRCKy1qhJUgPNhclPpJoZaJvY+KEzs0DZGxk4ppDqag==",
       "type": "package",
       "files": [
-        "SQLitePCLRaw.core.1.0.0.nupkg.sha512",
+        "SQLitePCLRaw.core.1.1.1.nupkg.sha512",
         "SQLitePCLRaw.core.nuspec",
         "lib/MonoAndroid/SQLitePCLRaw.core.dll",
-        "lib/MonoTouch/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
         "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
         "lib/net35/SQLitePCLRaw.core.dll",
         "lib/net40/SQLitePCLRaw.core.dll",
@@ -20697,23 +20762,23 @@
         "lib/wpa81/SQLitePCLRaw.core.dll"
       ]
     },
-    "SQLitePCLRaw.lib.e_sqlite3.v140/1.0.0": {
-      "sha512": "39UDEymjBjnamJ2bj/sSefDba63WTSCLIryXnw5xgJAEyBzPivCoZI8zbbo8MtyBo+WmJfrQXwJ5Rxenzg+rWw==",
+    "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.1": {
+      "sha512": "l0y6OAfSRc/VkvU7T07J7Lu7kBoVjn9L58P87df+iLiEHx2koG28jCERQUgBRCF7jhp/69tQfl0Lm/4oSlhzGg==",
       "type": "package",
       "files": [
-        "SQLitePCLRaw.lib.e_sqlite3.v140.1.0.0.nupkg.sha512",
+        "SQLitePCLRaw.lib.e_sqlite3.v140.1.1.1.nupkg.sha512",
         "SQLitePCLRaw.lib.e_sqlite3.v140.nuspec",
         "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets",
-        "build/native/sqlite3/v140/arm/e_sqlite3.dll",
-        "build/native/sqlite3/v140/x64/e_sqlite3.dll",
-        "build/native/sqlite3/v140/x86/e_sqlite3.dll"
+        "runtimes/win10-arm/native/e_sqlite3.dll",
+        "runtimes/win10-x64/native/e_sqlite3.dll",
+        "runtimes/win10-x86/native/e_sqlite3.dll"
       ]
     },
-    "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.0.0": {
-      "sha512": "GtC9Zib0YTQMPFFCUqAhySjkvfOep5Pe6IItq8BPtpxxkGFhI+guTzd52NHIzdDVz4u9yQkpekUx9QDafg9ekA==",
+    "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.1": {
+      "sha512": "3CBmhHnArtICDUckXgavxmR2YbWARigKRXgoeMgbrpKyeTKzm8MQ9lZNEIe5DV4lCeXMXmMZGcnnNsyVPf3I7A==",
       "type": "package",
       "files": [
-        "SQLitePCLRaw.provider.e_sqlite3.uwp10.1.0.0.nupkg.sha512",
+        "SQLitePCLRaw.provider.e_sqlite3.uwp10.1.1.1.nupkg.sha512",
         "SQLitePCLRaw.provider.e_sqlite3.uwp10.nuspec",
         "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll"
       ]
@@ -25820,7 +25885,7 @@
       ]
     },
     "Xam.Plugins.Settings/2.5.1": {
-      "sha512": "qLFxTF5NXC4VvLt4+DtdYc31d33bXOQkophUlm4mGRZoefeF/bu4ScnrcK0OZYAXimt1ONqO9kId2e6YcsW5dA==",
+      "sha512": "74FJFEiDiItFm73B+k5bBGXu7ZJF1J8u+GNjS/xYgtgSqty+5Nc8ZWwxx0BqzlrDmGnKPSnNcTf2vm5Sw46bIw==",
       "type": "package",
       "files": [
         "Xam.Plugins.Settings.2.5.1.nupkg.sha512",
@@ -26088,7 +26153,7 @@
       ]
     },
     "Xamarin.Forms.Maps/2.3.2.127": {
-      "sha512": "pvRKTi9bn+jMTZQqjDpaTIrwtq/Q2RcBUNPzqodF0HdwuI1P9yCrfcIAMmLAk8KokbgBi67rUqcmTpfEtQbj0A==",
+      "sha512": "0dSV+ZCCdEinSw0V76AapyfU9Hd4rn8vLZpFIFraCrd1935O1UhsbeBG8dcnIFzzSxGB+KcgvAO81uUePahB6w==",
       "type": "package",
       "files": [
         "Xamarin.Forms.Maps.2.3.2.127.nupkg.sha512",
@@ -26246,10 +26311,11 @@
       "Newtonsoft.Json >= 9.0.1",
       "NodaTime >= 1.3.2",
       "PCLStorage >= 1.0.2",
-      "Plugin.Permissions >= 1.1.7",
+      "Plugin.Permissions >= 1.2.1",
       "Plugin.Share >= 4.0.3",
-      "Refractored.MvvmHelpers >= 1.0.1",
-      "Refractored.XamForms.PullToRefresh >= 1.0.10",
+      "Refractored.MvvmHelpers >= 1.1.0",
+      "Refractored.XamForms.PullToRefresh >= 1.1.0",
+      "SQLitePCLRaw.bundle_green >= 1.1.1",
       "Xam.Plugin.Connectivity >= 2.2.12",
       "Xam.Plugin.EmbeddedResource >= 1.0.1",
       "Xam.Plugin.ExternalMaps >= 3.0.0",
